@@ -19,19 +19,63 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_marginTop="150sp">
+        android:layout_marginTop="150sp"/>
 
 
    <EditText
-       android:id="@+id/Email"
+       android:id="@+id/email"
+       android:background="@drawable/logback"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:inputType="textEmailAddress"
+       android:drawableLeft="@drawable/emailicon"
+       android:drawablePadding="10sp"
+       android:layout_marginLeft="30sp"
        android:hint="Type Your Email"
        android:textColor="#DAFFFFFF"
        android:textColorHint="#DAFFFFFF"
        android:textSize="25sp"
        android:layout_centerVertical="true"
-       android:textStyle="bold"/>
+       android:textStyle="bold"
+       android:padding="10sp"
+       android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/logback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/passwordicon"
+        android:drawablePadding="10sp"
+        android:layout_marginLeft="30sp"
+        android:hint="Type Your Email"
+        android:textColor="#DAFFFFFF"
+        android:textColorHint="#DAFFFFFF"
+        android:textSize="25sp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continuebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/continueback"
+        android:textColor="#DAFFFFFF"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:text="Continue"
+        android:textSize="30sp"
+        android:paddingHorizontal="100sp"/>
+
+
 
 
 
